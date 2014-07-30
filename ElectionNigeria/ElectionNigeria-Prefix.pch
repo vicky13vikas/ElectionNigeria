@@ -13,4 +13,8 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+    #import "SWRevealViewController.h"
+    #import "UIViewController+RevealViewSetup.h"
+
 #endif

@@ -1,27 +1,239 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3sc-Ye-f7N">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Reveal View Controller-->
+        <scene sceneID="MTv-kP-THU">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ENViewController" sceneMemberID="viewController">
+                <viewController id="3sc-Ye-f7N" customClass="ENRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="U3g-nV-dAW"/>
+                        <viewControllerLayoutGuide type="bottom" id="OrT-pL-L9C"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="JMJ-X1-Wft">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="C36-WS-IGl" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="oeA-J7-u8i"/>
+                        <segue destination="a2b-eB-e9L" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="umD-xo-492"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F9j-gT-HwL" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-912" y="-341"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="McB-jd-uM2">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="a2b-eB-e9L" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AzJ-Ah-hHm">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UaO-CK-Clh" kind="relationship" relationship="rootViewController" id="QRF-fh-VMg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVJ-O2-Dif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-357" y="19"/>
+        </scene>
+        <!--Base View Controller - Election Of Nigeria-->
+        <scene sceneID="aXG-DE-kvV">
+            <objects>
+                <viewController id="UaO-CK-Clh" customClass="ENBaseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nNQ-kG-6h9"/>
+                        <viewControllerLayoutGuide type="bottom" id="9GZ-mo-PU7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oEH-HH-XsJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="map_Nigeria" translatesAutoresizingMaskIntoConstraints="NO" id="2XA-mN-2dP">
+                                <rect key="frame" x="5" y="100" width="310" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Election Of Nigeria" id="Fec-mx-dKX">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="xb5-SY-eEe"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1M-t8-xaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="19"/>
+        </scene>
+        <!--Side Bar View Controller-->
+        <scene sceneID="6vq-HO-AxK">
+            <objects>
+                <tableViewController id="VXT-oa-694" customClass="ENSideBarViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="49" sectionHeaderHeight="22" sectionFooterHeight="22" id="ePm-D0-yJI">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SideBarCell" rowHeight="50" id="gsZ-PG-0yi" customClass="GTSideBarCell">
+                                <rect key="frame" x="0.0" y="22" width="260" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gsZ-PG-0yi" id="yl4-RO-Oh2">
+                                    <rect key="frame" x="0.0" y="0.0" width="227" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="separator_line_side_bar" translatesAutoresizingMaskIntoConstraints="NO" id="bJz-jh-zhC">
+                                            <rect key="frame" x="15" y="0.0" width="260" height="2"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="bJz-jh-zhC" secondAttribute="trailing" constant="-48" id="IAZ-1G-WvE"/>
+                                        <constraint firstItem="bJz-jh-zhC" firstAttribute="leading" secondItem="yl4-RO-Oh2" secondAttribute="leading" constant="15" id="rl8-jG-0dG"/>
+                                        <constraint firstItem="bJz-jh-zhC" firstAttribute="top" secondItem="yl4-RO-Oh2" secondAttribute="top" id="sx1-8z-e9h"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VXT-oa-694" id="5mZ-hL-Hfk"/>
+                            <outlet property="delegate" destination="VXT-oa-694" id="D7R-bP-Xo4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2c-Vx-FHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="-673"/>
+        </scene>
+        <!--Political Parties Table View Controller - Political Parties-->
+        <scene sceneID="2Zf-p4-8du">
+            <objects>
+                <tableViewController id="lR6-rw-nls" customClass="ENPoliticalPartiesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" id="BSt-AM-CEC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="partiesListCell" textLabel="OfC-Ky-fom" rowHeight="65" style="IBUITableViewCellStyleDefault" id="Bsb-CF-oQd">
+                                <rect key="frame" x="0.0" y="86" width="320" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bsb-CF-oQd" id="c3B-Tk-th6">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="64"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OfC-Ky-fom">
+                                            <rect key="frame" x="15" y="0.0" width="270" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lR6-rw-nls" id="SaS-UG-orB"/>
+                            <outlet property="delegate" destination="lR6-rw-nls" id="ipR-4K-5uF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Political Parties" id="eLT-YN-okz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iIC-Kq-ZNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1207" y="19"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pm4-mT-drc">
+            <objects>
+                <navigationController storyboardIdentifier="PoliticalPartiesViewController" definesPresentationContext="YES" id="XpP-IT-wf8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fga-QZ-PCB">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lR6-rw-nls" kind="relationship" relationship="rootViewController" id="Gkr-gu-WQ1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7P-mq-SPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="673" y="19"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PqI-0C-The">
+            <objects>
+                <viewController id="C36-WS-IGl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OcQ-qm-XJ2"/>
+                        <viewControllerLayoutGuide type="bottom" id="rP8-nU-bI9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bt-EK-lIM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETv-W0-T9W">
+                                <rect key="frame" x="0.0" y="68" width="260" height="500"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="VXT-oa-694" kind="embed" id="j7z-Nw-Mjs"/>
+                                </connections>
+                            </containerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="8Nd-jV-9UB">
+                                <rect key="frame" x="20" y="26" width="50" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="FNy-oU-jCq"/>
+                                    <constraint firstAttribute="height" constant="25" id="v0S-QE-JYc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="separator_line_side_bar" translatesAutoresizingMaskIntoConstraints="NO" id="Psi-lS-NCt">
+                                <rect key="frame" x="10" y="59" width="300" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dwp-ET-RuA"/>
+                                    <constraint firstAttribute="width" constant="300" id="uDq-rI-hvW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Election Of Nigeria" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2N-kc-8wA">
+                                <rect key="frame" x="80" y="26" width="168" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8Nd-jV-9UB" secondAttribute="trailing" constant="250" id="31T-ML-4tX"/>
+                            <constraint firstItem="Psi-lS-NCt" firstAttribute="top" secondItem="8Nd-jV-9UB" secondAttribute="bottom" constant="8" id="GDn-KC-h5t"/>
+                            <constraint firstAttribute="trailing" secondItem="ETv-W0-T9W" secondAttribute="trailing" constant="60" id="ILh-In-VuY"/>
+                            <constraint firstItem="rP8-nU-bI9" firstAttribute="top" secondItem="ETv-W0-T9W" secondAttribute="bottom" id="OIA-4g-1fq"/>
+                            <constraint firstItem="ETv-W0-T9W" firstAttribute="top" secondItem="Psi-lS-NCt" secondAttribute="bottom" constant="8" id="XAn-0O-TDq"/>
+                            <constraint firstItem="8Nd-jV-9UB" firstAttribute="top" secondItem="OcQ-qm-XJ2" secondAttribute="bottom" constant="6" id="ZcY-tM-cWS"/>
+                            <constraint firstItem="8Nd-jV-9UB" firstAttribute="leading" secondItem="8bt-EK-lIM" secondAttribute="leading" constant="20" id="gVj-Us-e6E"/>
+                            <constraint firstAttribute="trailing" secondItem="Psi-lS-NCt" secondAttribute="trailing" constant="10" id="kI9-Rq-YYa"/>
+                            <constraint firstItem="ETv-W0-T9W" firstAttribute="leading" secondItem="8bt-EK-lIM" secondAttribute="leading" id="n8m-AD-1EW"/>
+                            <constraint firstItem="ETv-W0-T9W" firstAttribute="top" secondItem="8bt-EK-lIM" secondAttribute="top" constant="68" id="tCp-z6-9u3"/>
+                            <constraint firstItem="Psi-lS-NCt" firstAttribute="leading" secondItem="8bt-EK-lIM" secondAttribute="leading" constant="10" id="z1N-P8-92l"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qUi-Zg-tgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-357" y="-679"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="flag" width="300" height="150"/>
+        <image name="map_Nigeria" width="596" height="525"/>
+        <image name="separator_line_side_bar" width="513" height="2"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

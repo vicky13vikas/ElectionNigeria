@@ -1,23 +1,25 @@
 //
-//  ENViewController.m
+//  ENBaseViewController.m
 //  ElectionNigeria
 //
 //  Created by Vikas Kumar on 29/07/14.
 //  Copyright (c) 2014 Vikas Kumar. All rights reserved.
 //
 
-#import "ENViewController.h"
+#import "ENBaseViewController.h"
+#import "UIViewController+RevealViewSetup.h"
 
-@interface ENViewController ()
+@interface ENBaseViewController ()
 
 @end
 
-@implementation ENViewController
+@implementation ENBaseViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self setUpViewController];
 }
 
 - (void)didReceiveMemoryWarning
