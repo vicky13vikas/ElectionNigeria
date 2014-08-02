@@ -41,7 +41,7 @@
             </objects>
             <point key="canvasLocation" x="-357" y="19"/>
         </scene>
-        <!--Base View Controller - Election Of Nigeria-->
+        <!--Base View Controller -  Nigerian Election-->
         <scene sceneID="aXG-DE-kvV">
             <objects>
                 <viewController id="UaO-CK-Clh" customClass="ENBaseViewController" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Election Of Nigeria" id="Fec-mx-dKX">
+                    <navigationItem key="navigationItem" title=" Nigerian Election" id="Fec-mx-dKX">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="xb5-SY-eEe"/>
                     </navigationItem>
                 </viewController>
@@ -200,7 +200,7 @@
                                     <constraint firstAttribute="width" constant="300" id="uDq-rI-hvW"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Election Of Nigeria" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2N-kc-8wA">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Nigerian Election" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2N-kc-8wA">
                                 <rect key="frame" x="80" y="26" width="168" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>

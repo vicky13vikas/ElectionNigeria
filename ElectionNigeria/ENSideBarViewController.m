@@ -34,7 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _menuItems = [NSMutableArray arrayWithArray:@[@"Election 2015", @"Parties", @"About us", @"Settings"]];
+    _menuItems = [NSMutableArray arrayWithArray:@[@"Election 2015 Newsfeed", @"Polling stations", @"Peoples Democratic Party", @"All Parties", @"About us", @"Settings"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -96,13 +96,14 @@
            
             break;
         case 1:
-            [self showViewControllerWIthIdentifier:@"PoliticalPartiesViewController"];
+
             break;
         case 2:
             
             break;
         case 3:
-            
+            [self showViewControllerWIthIdentifier:@"PoliticalPartiesViewController"];
+
             break;
             
             
