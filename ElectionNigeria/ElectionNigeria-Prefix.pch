@@ -23,3 +23,10 @@
 
 // To check if the current device is iPad or not
 #define isIpad() ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+
+// Debug log
+#ifdef DEBUG
+#   define ENLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define ENLog(...)
+#endif

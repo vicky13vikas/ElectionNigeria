@@ -8,6 +8,7 @@
 
 #import <FacebookSDK/Facebook.h>
 #import "ENSignInViewController.h"
+#import "ENFacebook.h"
 
 #define FOUR_INCH_SCROLL_VIEW_HEIGHT 504
 
@@ -226,7 +227,24 @@
 
 - (IBAction)facebookTapped:(id)sender
 {
-    [FBSession openActiveSessionWithAllowLoginUI:YES];
+    [[FBSession activeSession] closeAndClearTokenInformation];
+    if([[FBSession activeSession] isOpen])
+    {
+        [self login];
+    }
+    else
+    {
+        [[ENFacebook sharedInstance] connectToFBWithCompletionBlock:^(BOOL isConnected, NSError *error) {
+           if(isConnected)
+           {
+               [self login];
+           }
+            else
+            {
+                [[[UIAlertView alloc] initWithTitle:@"Login Error" message:@"Unable to connect to Facebook" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+            }
+        }];
+    }
 }
 
 - (IBAction)twitterTapped:(id)sender {
