@@ -2,15 +2,18 @@ PODS:
   - Bolts (1.1.1)
   - Facebook-iOS-SDK (3.17.0):
     - Bolts
+  - STTwitter (0.1.4)
   - SWRevealViewController (1.1.3)
 
 DEPENDENCIES:
   - Facebook-iOS-SDK (~> 3.17.0)
+  - STTwitter (~> 0.1.4)
   - SWRevealViewController (~> 1.1.1)
 
 SPEC CHECKSUMS:
   Bolts: 0ca796081c3e7c139bd86d6903c27f1b83036a5d
   Facebook-iOS-SDK: f20274d809f112ba540842e2b6cbe50128d51b7b
+  STTwitter: 809f63f856341fdd103fbc6d9e4818d48a91be0c
   SWRevealViewController: 6acf5326608610a4b68442bdf55ecd75687f8883
 
 COCOAPODS: 0.33.1

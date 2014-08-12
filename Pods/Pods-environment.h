@@ -18,6 +18,12 @@
 #define COCOAPODS_VERSION_MINOR_Facebook_iOS_SDK 17
 #define COCOAPODS_VERSION_PATCH_Facebook_iOS_SDK 0
 
+// STTwitter
+#define COCOAPODS_POD_AVAILABLE_STTwitter
+#define COCOAPODS_VERSION_MAJOR_STTwitter 0
+#define COCOAPODS_VERSION_MINOR_STTwitter 1
+#define COCOAPODS_VERSION_PATCH_STTwitter 4
+
 // SWRevealViewController
 #define COCOAPODS_POD_AVAILABLE_SWRevealViewController
 #define COCOAPODS_VERSION_MAJOR_SWRevealViewController 1
