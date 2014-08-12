@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  ElectionNigeria
+
+  Created by Vikas Kumar on 12/08/14.
+  Copyright (c) 2014 Vikas Kumar. All rights reserved.
+*/
+
+"Error" = "Error";
+
+"Email_cannot_be_empty" = "Email cannot be empty";
+"Password_cannot_be_empty" = "Password cannot be empty";
+"OK" = "OK";
+"Invalid_Email" = "Invalid Email";
+"Please_Enter_Email" = "Please Enter Email";

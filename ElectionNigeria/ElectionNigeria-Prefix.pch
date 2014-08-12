@@ -16,5 +16,10 @@
 
     #import "SWRevealViewController.h"
     #import "UIViewController+RevealViewSetup.h"
+    #import "ENConstants.h"
 
 #endif
+
+
+// To check if the current device is iPad or not
+#define isIpad() ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)

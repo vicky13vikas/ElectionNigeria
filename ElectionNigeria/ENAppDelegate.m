@@ -17,6 +17,15 @@
 
     [self setAppearance];
     
+    if(![[NSUserDefaults  standardUserDefaults] valueForKey:ENFirstTimeLaunchCompleteUserDefaultsKey])
+    {
+        if(isIpad())
+            self.window.rootViewController = [[UIStoryboard storyboardWithName:@"SignInStoryboard" bundle:nil] instantiateInitialViewController];
+        else
+            self.window.rootViewController = [[UIStoryboard storyboardWithName:@"SignInStoryboard" bundle:nil] instantiateInitialViewController];
+    }
+
+    
     return YES;
 }
 
