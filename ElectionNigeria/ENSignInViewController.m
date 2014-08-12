@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Vikas Kumar. All rights reserved.
 //
 
+#import <FacebookSDK/Facebook.h>
 #import "ENSignInViewController.h"
 
 #define FOUR_INCH_SCROLL_VIEW_HEIGHT 504
@@ -223,5 +224,15 @@
 }
 
 
+- (IBAction)facebookTapped:(id)sender
+{
+    [FBSession openActiveSessionWithAllowLoginUI:YES];
+}
+
+- (IBAction)twitterTapped:(id)sender {
+}
+
+- (IBAction)googleTapped:(id)sender {
+}
 
 @end

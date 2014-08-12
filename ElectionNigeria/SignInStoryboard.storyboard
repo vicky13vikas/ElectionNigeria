@@ -92,6 +92,9 @@
                                         <state key="normal" image="twitter">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="twitterTapped:" destination="HF6-7d-ohs" eventType="touchUpInside" id="1Kx-12-eOv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9D-B4-a8R">
                                         <rect key="frame" x="220" y="314" width="60" height="60"/>
@@ -99,6 +102,9 @@
                                         <state key="normal" image="google">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="googleTapped:" destination="HF6-7d-ohs" eventType="touchUpInside" id="5IB-On-XMZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEk-bB-XTw">
                                         <rect key="frame" x="40" y="314" width="60" height="60"/>
@@ -106,6 +112,9 @@
                                         <state key="normal" image="facebook">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="facebookTapped:" destination="HF6-7d-ohs" eventType="touchUpInside" id="IPg-TP-aZc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <connections>
