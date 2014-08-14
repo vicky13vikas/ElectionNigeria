@@ -9,8 +9,12 @@
 #import <FacebookSDK/Facebook.h>
 #import "ENSignInViewController.h"
 #import "ENFacebook.h"
+#import <STTwitter/STTwitter.h>
 
 #define FOUR_INCH_SCROLL_VIEW_HEIGHT 504
+
+#define TWITTER_APIKEY @"u7pYmii9DhFgN4KIOQ25krJfX"
+#define TWITTER_SECRET @"ZCSyLNQ63TlaMi42yxKnRz0AdxiwmFkymEIfaOAuEyl2GgGbDx"
 
 @interface ENSignInViewController ()
 {
@@ -22,6 +26,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *signInButton;
 @property (weak, nonatomic) IBOutlet UIButton *forgotPasswordButton;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property (nonatomic, strong) STTwitterAPI *twitter;
 
 @end
 
@@ -227,7 +233,6 @@
 
 - (IBAction)facebookTapped:(id)sender
 {
-    [[FBSession activeSession] closeAndClearTokenInformation];
     if([[FBSession activeSession] isOpen])
     {
         [self login];
@@ -247,8 +252,71 @@
     }
 }
 
-- (IBAction)twitterTapped:(id)sender {
+- (IBAction)twitterTapped:(id)sender
+{
+//    self.twitter = [STTwitterAPI twitterAPIOSWithFirstAccount];
+    
+//    [_twitter verifyCredentialsWithSuccessBlock:^(NSString *username) {
+//        
+//        [self login];
+//        
+//    } errorBlock:^(NSError *error) {
+//        if(error.code == 3)
+//        {
+//            [[[UIAlertView alloc] initWithTitle:@"No account found" message:@"Please go to device settings and add login in your twitter account" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+//        }
+//        else
+//        {
+//            [[[UIAlertView alloc] initWithTitle:@"Login Error" message:@"Unable to connect to Twitter" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+//        }
+//    }];
+    
+    _twitter = [STTwitterAPI twitterAPIWithOAuthConsumerKey:TWITTER_APIKEY
+                                             consumerSecret:TWITTER_SECRET];
+    
+    [_twitter postTokenRequest:^(NSURL *url, NSString *oauthToken) {
+        NSLog(@"-- url: %@", url);
+        NSLog(@"-- oauthToken: %@", oauthToken);
+        
+        [[UIApplication sharedApplication] openURL:url];
+    } authenticateInsteadOfAuthorize:NO
+                    forceLogin:@(YES)
+                    screenName:nil
+                 oauthCallback:@"twitterNigeriaElection://twitter_access_tokens/"
+                    errorBlock:^(NSError *error) {
+                        NSLog(@"-- error: %@", error);
+                    }];
 }
+
+- (void)setOAuthToken:(NSString *)token oauthVerifier:(NSString *)verifier {
+    
+    [_twitter postAccessTokenRequestWithPIN:verifier successBlock:^(NSString *oauthToken, NSString *oauthTokenSecret, NSString *userID, NSString *screenName) {
+        NSLog(@"-- screenName: %@", screenName);
+        
+        
+        /*
+         At this point, the user can use the API and you can read his access tokens with:
+         
+         _twitter.oauthAccessToken;
+         _twitter.oauthAccessTokenSecret;
+         
+         You can store these tokens (in user default, or in keychain) so that the user doesn't need to authenticate again on next launches.
+         
+         Next time, just instanciate STTwitter with the class method:
+         
+         +[STTwitterAPI twitterAPIWithOAuthConsumerKey:consumerSecret:oauthToken:oauthTokenSecret:]
+         
+         Don't forget to call the -[STTwitter verifyCredentialsWithSuccessBlock:errorBlock:] after that.
+         */
+        
+        [self login];
+        
+    } errorBlock:^(NSError *error) {
+        
+        NSLog(@"-- %@", [error localizedDescription]);
+    }];
+}
+
 
 - (IBAction)googleTapped:(id)sender {
 }

@@ -10,4 +10,6 @@
 
 @interface ENSignInViewController : UIViewController
 
+- (void)setOAuthToken:(NSString *)token oauthVerifier:(NSString *)verfier;
+
 @end

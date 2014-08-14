@@ -7,6 +7,7 @@
 //
 
 #import "ENAppDelegate.h"
+#import "ENSignInViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
 
 @implementation ENAppDelegate
@@ -41,16 +42,47 @@
 - (BOOL)application:(UIApplication *)application
             openURL:(NSURL *)url
   sourceApplication:(NSString *)sourceApplication
-         annotation:(id)annotation {
-    
-    // Call FBAppCall's handleOpenURL:sourceApplication to handle Facebook app responses
-    BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
-    
-    // You can add your app-specific url handling code here if needed
+         annotation:(id)annotation
+{
+    BOOL wasHandled = NO;
+
+    if([[url scheme] isEqualToString:@"fb850153414997555"])
+    {
+        wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+    }
+    else if([[url scheme] isEqualToString:@"twitternigeriaelection"])
+    {
+        NSDictionary *d = [self parametersDictionaryFromQueryString:[url query]];
+        NSString *token = d[@"oauth_token"];
+        NSString *verifier = d[@"oauth_verifier"];
+        
+        ENSignInViewController *vc = (ENSignInViewController *)[[(UINavigationController*)[[self window] rootViewController] viewControllers] firstObject];
+        [vc setOAuthToken:token oauthVerifier:verifier];
+        wasHandled = YES;
+    }
     
     return wasHandled;
 }
 
+
+- (NSDictionary *)parametersDictionaryFromQueryString:(NSString *)queryString {
+    
+    NSMutableDictionary *md = [NSMutableDictionary dictionary];
+    
+    NSArray *queryComponents = [queryString componentsSeparatedByString:@"&"];
+    
+    for(NSString *s in queryComponents) {
+        NSArray *pair = [s componentsSeparatedByString:@"="];
+        if([pair count] != 2) continue;
+        
+        NSString *key = pair[0];
+        NSString *value = pair[1];
+        
+        md[key] = value;
+    }
+    
+    return md;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
