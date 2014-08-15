@@ -13,3 +13,7 @@
 "OK" = "OK";
 "Invalid_Email" = "Invalid Email";
 "Please_Enter_Email" = "Please Enter Email";
+"First_Name" = "First Name";
+"Last_Name" = "Last Name";
+"Take_Photo" = "Take Photo";
+"Choose_Photo" = "Choose Photo";

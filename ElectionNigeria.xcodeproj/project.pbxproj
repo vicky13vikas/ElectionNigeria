@@ -15,9 +15,15 @@
 		4E1E0C5419895F1D00FBC299 /* UIViewController+RevealViewSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E0C5319895F1D00FBC299 /* UIViewController+RevealViewSetup.m */; };
 		4E1E0C5B1989699D00FBC299 /* ENPoliticalPartiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E0C5A1989699D00FBC299 /* ENPoliticalPartiesTableViewController.m */; };
 		4E1E0C5D19896C9B00FBC299 /* PartiesList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E1E0C5C19896C9B00FBC299 /* PartiesList.plist */; };
+		4E410886199E6C0500AF084E /* RegisterAsCandidateStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E410885199E6C0500AF084E /* RegisterAsCandidateStoryboard.storyboard */; };
+		4E410889199E6C3900AF084E /* ENRegisterAsCandidateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E410888199E6C3900AF084E /* ENRegisterAsCandidateViewController.m */; };
+		4E41088B199E7BEF00AF084E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E41088A199E7BEF00AF084E /* MapKit.framework */; };
+		4E41088E199E7CFE00AF084E /* ENRegisterOnlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E41088D199E7CFE00AF084E /* ENRegisterOnlineViewController.m */; };
 		4E4EB0AE199E351600B89760 /* ENFacebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EB0AA199E351600B89760 /* ENFacebook.m */; };
 		4E4EB0AF199E351600B89760 /* ENGooglePlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EB0AD199E351600B89760 /* ENGooglePlus.m */; };
 		4E4EB0B2199E3FED00B89760 /* ENRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EB0B0199E3FED00B89760 /* ENRegistrationViewController.m */; };
+		4E4EB0B4199E548400B89760 /* RegisterToVoteStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4EB0B3199E548400B89760 /* RegisterToVoteStoryboard.storyboard */; };
+		4E4EB0B7199E551300B89760 /* ENRegisterToVoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EB0B6199E551300B89760 /* ENRegisterToVoteViewController.m */; };
 		4E75A5371989528000FA964A /* ENRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75A5361989528000FA964A /* ENRevealViewController.m */; };
 		4E75A53A1989532B00FA964A /* ENSideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75A5391989532B00FA964A /* ENSideBarViewController.m */; };
 		4EA9E66D198749570050B0A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA9E66C198749570050B0A4 /* Foundation.framework */; };
@@ -62,12 +68,21 @@
 		4E1E0C591989699D00FBC299 /* ENPoliticalPartiesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENPoliticalPartiesTableViewController.h; sourceTree = "<group>"; };
 		4E1E0C5A1989699D00FBC299 /* ENPoliticalPartiesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENPoliticalPartiesTableViewController.m; sourceTree = "<group>"; };
 		4E1E0C5C19896C9B00FBC299 /* PartiesList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PartiesList.plist; sourceTree = "<group>"; };
+		4E410885199E6C0500AF084E /* RegisterAsCandidateStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterAsCandidateStoryboard.storyboard; sourceTree = "<group>"; };
+		4E410887199E6C3900AF084E /* ENRegisterAsCandidateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENRegisterAsCandidateViewController.h; sourceTree = "<group>"; };
+		4E410888199E6C3900AF084E /* ENRegisterAsCandidateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENRegisterAsCandidateViewController.m; sourceTree = "<group>"; };
+		4E41088A199E7BEF00AF084E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4E41088C199E7CFE00AF084E /* ENRegisterOnlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENRegisterOnlineViewController.h; sourceTree = "<group>"; };
+		4E41088D199E7CFE00AF084E /* ENRegisterOnlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENRegisterOnlineViewController.m; sourceTree = "<group>"; };
 		4E4EB0A9199E351600B89760 /* ENFacebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENFacebook.h; sourceTree = "<group>"; };
 		4E4EB0AA199E351600B89760 /* ENFacebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENFacebook.m; sourceTree = "<group>"; };
 		4E4EB0AC199E351600B89760 /* ENGooglePlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENGooglePlus.h; sourceTree = "<group>"; };
 		4E4EB0AD199E351600B89760 /* ENGooglePlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENGooglePlus.m; sourceTree = "<group>"; };
 		4E4EB0B0199E3FED00B89760 /* ENRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENRegistrationViewController.m; sourceTree = "<group>"; };
 		4E4EB0B1199E3FED00B89760 /* ENRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENRegistrationViewController.h; sourceTree = "<group>"; };
+		4E4EB0B3199E548400B89760 /* RegisterToVoteStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterToVoteStoryboard.storyboard; sourceTree = "<group>"; };
+		4E4EB0B5199E551300B89760 /* ENRegisterToVoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENRegisterToVoteViewController.h; sourceTree = "<group>"; };
+		4E4EB0B6199E551300B89760 /* ENRegisterToVoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENRegisterToVoteViewController.m; sourceTree = "<group>"; };
 		4E75A5351989528000FA964A /* ENRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENRevealViewController.h; sourceTree = "<group>"; };
 		4E75A5361989528000FA964A /* ENRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENRevealViewController.m; sourceTree = "<group>"; };
 		4E75A5381989532B00FA964A /* ENSideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENSideBarViewController.h; sourceTree = "<group>"; };
@@ -101,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E41088B199E7BEF00AF084E /* MapKit.framework in Frameworks */,
 				4EA9E66F198749570050B0A4 /* CoreGraphics.framework in Frameworks */,
 				4EA9E671198749570050B0A4 /* UIKit.framework in Frameworks */,
 				4EA9E66D198749570050B0A4 /* Foundation.framework in Frameworks */,
@@ -180,6 +196,7 @@
 		4EA9E66B198749570050B0A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E41088A199E7BEF00AF084E /* MapKit.framework */,
 				4EA9E66C198749570050B0A4 /* Foundation.framework */,
 				4EA9E66E198749570050B0A4 /* CoreGraphics.framework */,
 				4EA9E670198749570050B0A4 /* UIKit.framework */,
@@ -203,6 +220,8 @@
 				4EA9E67E198749570050B0A4 /* Main_iPhone.storyboard */,
 				4EA9E681198749570050B0A4 /* Main_iPad.storyboard */,
 				090BBDA5199A1C5D00821E16 /* SignInStoryboard.storyboard */,
+				4E4EB0B3199E548400B89760 /* RegisterToVoteStoryboard.storyboard */,
+				4E410885199E6C0500AF084E /* RegisterAsCandidateStoryboard.storyboard */,
 				4EA9E684198749570050B0A4 /* ENBaseViewController.h */,
 				4EA9E685198749570050B0A4 /* ENBaseViewController.m */,
 				4E1E0C5219895F1D00FBC299 /* UIViewController+RevealViewSetup.h */,
@@ -217,6 +236,12 @@
 				090BBDA8199A279700821E16 /* ENConstants.m */,
 				4E4EB0B1199E3FED00B89760 /* ENRegistrationViewController.h */,
 				4E4EB0B0199E3FED00B89760 /* ENRegistrationViewController.m */,
+				4E4EB0B5199E551300B89760 /* ENRegisterToVoteViewController.h */,
+				4E4EB0B6199E551300B89760 /* ENRegisterToVoteViewController.m */,
+				4E41088C199E7CFE00AF084E /* ENRegisterOnlineViewController.h */,
+				4E41088D199E7CFE00AF084E /* ENRegisterOnlineViewController.m */,
+				4E410887199E6C3900AF084E /* ENRegisterAsCandidateViewController.h */,
+				4E410888199E6C3900AF084E /* ENRegisterAsCandidateViewController.m */,
 				4EA9E673198749570050B0A4 /* Supporting Files */,
 			);
 			path = ElectionNigeria;
@@ -335,6 +360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EA9E683198749570050B0A4 /* Main_iPad.storyboard in Resources */,
+				4E4EB0B4199E548400B89760 /* RegisterToVoteStoryboard.storyboard in Resources */,
+				4E410886199E6C0500AF084E /* RegisterAsCandidateStoryboard.storyboard in Resources */,
 				4EA9E688198749570050B0A4 /* Images.xcassets in Resources */,
 				4EA9E680198749570050B0A4 /* Main_iPhone.storyboard in Resources */,
 				090BBDAF199A38D300821E16 /* Localizable.strings in Resources */,
@@ -392,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E410889199E6C3900AF084E /* ENRegisterAsCandidateViewController.m in Sources */,
 				4E1E0C5419895F1D00FBC299 /* UIViewController+RevealViewSetup.m in Sources */,
 				4E1E0C5B1989699D00FBC299 /* ENPoliticalPartiesTableViewController.m in Sources */,
 				4E75A5371989528000FA964A /* ENRevealViewController.m in Sources */,
@@ -400,10 +428,12 @@
 				090BBDA9199A279700821E16 /* ENConstants.m in Sources */,
 				4EA9E679198749570050B0A4 /* main.m in Sources */,
 				090BBDAD199A2A5B00821E16 /* ENUnderlinedButton.m in Sources */,
+				4E4EB0B7199E551300B89760 /* ENRegisterToVoteViewController.m in Sources */,
 				090BBDA4199A1C2800821E16 /* ENSignInViewController.m in Sources */,
 				4E4EB0AE199E351600B89760 /* ENFacebook.m in Sources */,
 				4E4EB0AF199E351600B89760 /* ENGooglePlus.m in Sources */,
 				4EA9E67D198749570050B0A4 /* ENAppDelegate.m in Sources */,
+				4E41088E199E7CFE00AF084E /* ENRegisterOnlineViewController.m in Sources */,
 				4E75A53A1989532B00FA964A /* ENSideBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,12 +571,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Obinna Asiegbu (M2A56S3QP7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Obinna Asiegbu (M2A56S3QP7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ElectionNigeria/ElectionNigeria-Prefix.pch";
 				INFOPLIST_FILE = "ElectionNigeria/ElectionNigeria-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a443e8ba-22fb-4a0f-8cff-0d4ec4bf00ef";
+				PROVISIONING_PROFILE = "31fed34c-b8bd-4d08-a041-b3e489f2ee6a";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -558,12 +589,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Obinna Asiegbu (M2A56S3QP7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Obinna Asiegbu (M2A56S3QP7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ElectionNigeria/ElectionNigeria-Prefix.pch";
 				INFOPLIST_FILE = "ElectionNigeria/ElectionNigeria-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a443e8ba-22fb-4a0f-8cff-0d4ec4bf00ef";
+				PROVISIONING_PROFILE = "31fed34c-b8bd-4d08-a041-b3e489f2ee6a";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

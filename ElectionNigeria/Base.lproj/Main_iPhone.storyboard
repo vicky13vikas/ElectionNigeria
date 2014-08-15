@@ -29,7 +29,7 @@
         <!--Navigation Controller-->
         <scene sceneID="McB-jd-uM2">
             <objects>
-                <navigationController definesPresentationContext="YES" id="a2b-eB-e9L" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BaseViewController" definesPresentationContext="YES" id="a2b-eB-e9L" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AzJ-Ah-hHm">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

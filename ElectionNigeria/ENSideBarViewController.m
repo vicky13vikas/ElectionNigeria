@@ -34,7 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _menuItems = [NSMutableArray arrayWithArray:@[@"Election 2015 Newsfeed", @"Polling stations", @"All Parties", @"Register To vote", @"Register as Candidate", @"Live Elections Result", @"Be the Eye", @"About us", @"Settings"]];
+    _menuItems = [NSMutableArray arrayWithArray:@[@"Election 2015 Newsfeed", @"Polling stations", @"All Parties", @"Register To Vote", @"Register as Candidate", @"Live Elections Result", @"Be the Eye", @"About us", @"Settings"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -89,11 +89,18 @@
     [self.revealViewController setFrontViewController:viewController animated:YES];
 }
 
+- (void)showViewControllerWithStoryBoardNamed:(NSString*)storyBoardName
+{
+    UIViewController *viewController;
+    viewController = [[UIStoryboard storyboardWithName:storyBoardName bundle:nil] instantiateInitialViewController];
+    [self.revealViewController setFrontViewController:viewController animated:YES];
+}
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.row) {
         case 0:
-           
+            [self showViewControllerWIthIdentifier:@"BaseViewController"];
             break;
         case 1:
 
@@ -102,8 +109,16 @@
             [self showViewControllerWIthIdentifier:@"PoliticalPartiesViewController"];
 
             break;
-        case 3:
+        case 3:     // Register To Vote
+            [self showViewControllerWithStoryBoardNamed:@"RegisterToVoteStoryboard"];
 
+            break;
+        case 4:     // Register As Candidate
+            [self showViewControllerWithStoryBoardNamed:@"RegisterAsCandidateStoryboard"];
+            
+            break;
+        case 6:     // Be The Eye
+            
             break;
             
             
