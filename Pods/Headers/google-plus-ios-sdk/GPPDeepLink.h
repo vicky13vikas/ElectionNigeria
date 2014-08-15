@@ -1,1 +1,1 @@
-../../google-plus-ios-sdk/google-plus-ios-sdk-1.1.0/lib/GPPDeepLink.h
+../../google-plus-ios-sdk/google-plus-ios-sdk-1.7.0/GooglePlus.framework/Versions/A/Headers/GPPDeepLink.h

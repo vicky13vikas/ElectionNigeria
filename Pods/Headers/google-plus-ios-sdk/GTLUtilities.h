@@ -1,1 +1,1 @@
-../../google-plus-ios-sdk/google-plus-ios-sdk-1.1.0/OpenSource/GTL/GTLUtilities.h
+../../google-plus-ios-sdk/google-plus-ios-sdk-1.7.0/GoogleOpenSource.framework/Versions/A/Headers/GTLUtilities.h

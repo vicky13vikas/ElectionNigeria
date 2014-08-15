@@ -42,14 +42,7 @@ install_resource()
   esac
 }
 install_resource "Facebook-iOS-SDK/src/FBUserSettingsViewResources.bundle"
-install_resource "google-plus-ios-sdk/google-plus-ios-sdk-1.1.0/Resources/google_plus_share.png"
-install_resource "google-plus-ios-sdk/google-plus-ios-sdk-1.1.0/Resources/google_plus_share@2x.png"
-install_resource "google-plus-ios-sdk/google-plus-ios-sdk-1.1.0/Resources/google_plus_share_large.png"
-install_resource "google-plus-ios-sdk/google-plus-ios-sdk-1.1.0/Resources/google_plus_share_large@2x.png"
-install_resource "google-plus-ios-sdk/google-plus-ios-sdk-1.1.0/Resources/google_plus_sign_in.png"
-install_resource "google-plus-ios-sdk/google-plus-ios-sdk-1.1.0/Resources/google_plus_sign_in@2x.png"
-install_resource "google-plus-ios-sdk/google-plus-ios-sdk-1.1.0/Resources/google_plus_sign_in_wide.png"
-install_resource "google-plus-ios-sdk/google-plus-ios-sdk-1.1.0/Resources/google_plus_sign_in_wide@2x.png"
+install_resource "google-plus-ios-sdk/google-plus-ios-sdk-1.7.0/GooglePlus.bundle"
 
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 if [[ "${ACTION}" == "install" ]]; then

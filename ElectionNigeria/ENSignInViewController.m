@@ -10,6 +10,7 @@
 #import "ENSignInViewController.h"
 #import "ENFacebook.h"
 #import <STTwitter/STTwitter.h>
+#import <GooglePlus/GooglePlus.h>
 
 #define FOUR_INCH_SCROLL_VIEW_HEIGHT 504
 
