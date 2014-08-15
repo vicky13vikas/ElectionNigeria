@@ -118,7 +118,8 @@
             
             break;
         case 6:     // Be The Eye
-            
+            [self showViewControllerWithStoryBoardNamed:@"BeTheEyeStoryboard"];
+
             break;
             
             
