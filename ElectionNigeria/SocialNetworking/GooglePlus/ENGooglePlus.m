@@ -1,15 +1,13 @@
 //
 // Class:    ENGooglePlus
 //
-// Project:	 Igloo
+// Project:	 ElectionNigeria
 //
 // Date:     14/03/14
 //
 // Author:	 Vikas Kumar
 //
-// Copyright © 2014 Gloopt. All rights reserved..
-// Written under contract by Robosoft Technologies Pvt. Ltd.
-//
+
 
 #import "ENGooglePlus.h"
 

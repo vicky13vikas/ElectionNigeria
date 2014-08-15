@@ -17,6 +17,7 @@
 		4E1E0C5D19896C9B00FBC299 /* PartiesList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E1E0C5C19896C9B00FBC299 /* PartiesList.plist */; };
 		4E4EB0AE199E351600B89760 /* ENFacebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EB0AA199E351600B89760 /* ENFacebook.m */; };
 		4E4EB0AF199E351600B89760 /* ENGooglePlus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EB0AD199E351600B89760 /* ENGooglePlus.m */; };
+		4E4EB0B2199E3FED00B89760 /* ENRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4EB0B0199E3FED00B89760 /* ENRegistrationViewController.m */; };
 		4E75A5371989528000FA964A /* ENRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75A5361989528000FA964A /* ENRevealViewController.m */; };
 		4E75A53A1989532B00FA964A /* ENSideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75A5391989532B00FA964A /* ENSideBarViewController.m */; };
 		4EA9E66D198749570050B0A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA9E66C198749570050B0A4 /* Foundation.framework */; };
@@ -65,6 +66,8 @@
 		4E4EB0AA199E351600B89760 /* ENFacebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENFacebook.m; sourceTree = "<group>"; };
 		4E4EB0AC199E351600B89760 /* ENGooglePlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENGooglePlus.h; sourceTree = "<group>"; };
 		4E4EB0AD199E351600B89760 /* ENGooglePlus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENGooglePlus.m; sourceTree = "<group>"; };
+		4E4EB0B0199E3FED00B89760 /* ENRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENRegistrationViewController.m; sourceTree = "<group>"; };
+		4E4EB0B1199E3FED00B89760 /* ENRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENRegistrationViewController.h; sourceTree = "<group>"; };
 		4E75A5351989528000FA964A /* ENRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENRevealViewController.h; sourceTree = "<group>"; };
 		4E75A5361989528000FA964A /* ENRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENRevealViewController.m; sourceTree = "<group>"; };
 		4E75A5381989532B00FA964A /* ENSideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENSideBarViewController.h; sourceTree = "<group>"; };
@@ -160,8 +163,8 @@
 				4EA9E672198749570050B0A4 /* ElectionNigeria */,
 				4EA9E694198749570050B0A4 /* ElectionNigeriaTests */,
 				4EA9E66B198749570050B0A4 /* Frameworks */,
-				4EA9E66A198749570050B0A4 /* Products */,
 				57ACC09A62C345289E5118C7 /* Pods.xcconfig */,
+				4EA9E66A198749570050B0A4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +215,8 @@
 				090BBDA3199A1C2800821E16 /* ENSignInViewController.m */,
 				090BBDA7199A279700821E16 /* ENConstants.h */,
 				090BBDA8199A279700821E16 /* ENConstants.m */,
+				4E4EB0B1199E3FED00B89760 /* ENRegistrationViewController.h */,
+				4E4EB0B0199E3FED00B89760 /* ENRegistrationViewController.m */,
 				4EA9E673198749570050B0A4 /* Supporting Files */,
 			);
 			path = ElectionNigeria;
@@ -390,6 +395,7 @@
 				4E1E0C5419895F1D00FBC299 /* UIViewController+RevealViewSetup.m in Sources */,
 				4E1E0C5B1989699D00FBC299 /* ENPoliticalPartiesTableViewController.m in Sources */,
 				4E75A5371989528000FA964A /* ENRevealViewController.m in Sources */,
+				4E4EB0B2199E3FED00B89760 /* ENRegistrationViewController.m in Sources */,
 				4EA9E686198749570050B0A4 /* ENBaseViewController.m in Sources */,
 				090BBDA9199A279700821E16 /* ENConstants.m in Sources */,
 				4EA9E679198749570050B0A4 /* main.m in Sources */,
@@ -540,7 +546,7 @@
 				INFOPLIST_FILE = "ElectionNigeria/ElectionNigeria-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fa42655c-ae3f-4b7a-a373-447e5ba94181";
+				PROVISIONING_PROFILE = "a443e8ba-22fb-4a0f-8cff-0d4ec4bf00ef";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -557,7 +563,7 @@
 				INFOPLIST_FILE = "ElectionNigeria/ElectionNigeria-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "fa42655c-ae3f-4b7a-a373-447e5ba94181";
+				PROVISIONING_PROFILE = "a443e8ba-22fb-4a0f-8cff-0d4ec4bf00ef";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

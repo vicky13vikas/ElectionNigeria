@@ -34,7 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _menuItems = [NSMutableArray arrayWithArray:@[@"Election 2015 Newsfeed", @"Polling stations", @"All Parties", @"Register To vote", @"Register as Candidate", @"Live Elections Result", @"About us", @"Settings"]];
+    _menuItems = [NSMutableArray arrayWithArray:@[@"Election 2015 Newsfeed", @"Polling stations", @"All Parties", @"Register To vote", @"Register as Candidate", @"Live Elections Result", @"Be the Eye", @"About us", @"Settings"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
