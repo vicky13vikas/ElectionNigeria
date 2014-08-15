@@ -17,7 +17,7 @@
 
 typedef void (^CompletionHandler)(bool, NSError *error);
 
-static NSString * const kGooglePlusClientId = @"";
+static NSString * const kGooglePlusClientId = @"35371430861-248tfpccehohr9uj75vida121sdictgg.apps.googleusercontent.com";
 
 @interface ENGooglePlus() <GPPShareDelegate>
 {
